@@ -12,7 +12,9 @@ public:
         int maxScore = 0;
         int left = 0;
         int right = n - 1;
-
+        //[100,200,300,400] 200
+        //[100,200] 150
+        //[200] 150
         while (left <= right) {
             if (power >= tokens[left]) {
                 power -= tokens[left];
